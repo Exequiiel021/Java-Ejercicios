@@ -1,5 +1,5 @@
 package ejercicio2;
-
+/* Autor Exequiel Dominguez */
 import java.util.Scanner;
 
 /* ● Ingresos mensuales totales del hogar equivalentes o superiores a $489.083
