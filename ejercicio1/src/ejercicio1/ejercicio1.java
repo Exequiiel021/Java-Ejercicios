@@ -1,5 +1,5 @@
 package ejercicio1;
-
+/*Autor Exequiel */
 import java.util.Scanner;
 
 public class ejercicio1 {
