@@ -1,2 +1,2 @@
 # Java-Ejercicios
-Estos son los ejercicios
+Estos son los ejercicios del curso
