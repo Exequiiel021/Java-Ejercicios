@@ -1,4 +1,4 @@
-package ejercicio3;
+package guia_2;
 
 import java.util.Scanner;
 
@@ -8,44 +8,41 @@ public class ejercicio1_B {
 		
 		Scanner leer = new Scanner(System.in);
 		
-		System.out.println("Ingrese 3 numeros, por cada numero de enter");
-		int num1 = leer.nextInt();
-		int num2 = leer.nextInt();
-		int num3 = leer.nextInt();
-		System.out.println("Ordenados de forma ascendente");
+		int vector[];
+		int nElementos;
+		int aux;
+		int num;
 		
-		int[] vector = new int[3];
+		System.out.println("Ingrese la cantidad de elementos del arreglo");
+		nElementos = leer.nextInt();
+		
+		vector = new int[nElementos];
 		
 		for (int i = 0; i < vector.length; i++) {
-			if (num1<num2 && num1<num3 && num2<num3) {
-				vector[0]=num1;
-				vector[1]=num2;
-				vector[2]=num3;	
-			} else if (num1<num2 && num1>num3) {
-				vector[0]=num3;
-				vector[1]=num1;
-				vector[2]=num2;
-			} else if(num1<num2 && num1<num3 && num2>num3) {
-				vector[0]=num1;
-				vector[1]=num3;
-				vector[2]=num2;
-			}else if(num1>num2 && num1>num3 && num2<num3){
-				vector[0]=num2;
-				vector[1]=num3;
-				vector[2]=num1;
-			}else if(num1>num2 && num1>num3 && num2<num1) {
-				vector[0]=num3;
-				vector[1]=num2;
-				vector[2]=num1;
-			}else {
-				vector[0]=num2;
-				vector[1]=num1;
-				vector[2]=num3;
+			System.out.println("Ingres el numero para la posicion " + i);
+			vector[i] = num=leer.nextInt();
+		}
+		
+		for (int i = 0; i < nElementos-1; i++) {
+			for (int j = 0; j < nElementos-1; j++) {
+				if(vector[j]> vector[j+1]) {
+					aux = vector[j];
+					vector[j] = vector[j+1];
+					vector[j+1] = aux;
+				}
 			}
 		}
-		for (int i = 0; i < vector.length; i++) {
+		
+		System.out.println("De forma ascendente");
+		for (int i = 0; i < nElementos; i++) {
 			System.out.print(vector[i] + " ");
 		}
+		System.out.println("");
+		
+		System.out.println("Ordenado de forma decreciente");
+		for (int i = nElementos-1; i >=0; i--) {
+			System.out.print(vector[i] + " ");
+		}
+		
 	}
-
 }
