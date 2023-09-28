@@ -27,20 +27,32 @@ public class ejercicio2_A {
 
 		System.out.println("Ingrese una Frase");
 		String frase = leer.nextLine();
-		
+
 		int desplazamiento = 1;
+		int desplazamiento2 = 2;
 
 		char fraseCharArray[] = frase.toCharArray();
-		
+		char fraseCharArray2[] = frase.toCharArray();
+
 		for (int i = 0; i < fraseCharArray.length; i++) {
-		    if (fraseCharArray[i] == 32) { // codigo ascii del espacio en blanco
-		        fraseCharArray[i] = 'a';
-		    } else {
-		        fraseCharArray[i] += desplazamiento;
-		    }
+			if (fraseCharArray[i] == 32) { // codigo ascii del espacio en blanco
+				fraseCharArray[i] = 'a';
+			} else {
+				fraseCharArray[i] += desplazamiento;
+			}
+		}
+
+		for (int i = 0; i < fraseCharArray2.length; i++) {
+			if (fraseCharArray2[i] == 32) { // codigo ascii del espacio en blanco
+				fraseCharArray2[i] = 'b';
+			} else {
+				fraseCharArray2[i] += desplazamiento2;
+			}
 		}
 
 		String fraseFinal = new String(fraseCharArray);
+		String fraseFinal2 = new String(fraseCharArray2);
 		System.out.println(fraseFinal);
+		System.out.println(fraseFinal2);
 	}
 }
