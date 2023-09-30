@@ -37,15 +37,15 @@ public class ejercicio2 {
 
 				if (letra.equalsIgnoreCase("S")) {
 					for (int i = 0; i < linea.length(); i++) {
-						int numero = Character.getNumericValue(linea.charAt(i)); // convierto el string a numeros para
-																					// sumarlos
+						int numero = Character.getNumericValue(linea.charAt(i)); // convierto el string a numeros para sumar
+																					
 						sumatoria += numero;
 					}
 				} else {
 					sumatoria = 1;
 					for (int i = 0; i < linea.length(); i++) {
-						int numero = Character.getNumericValue(linea.charAt(i)); // convierto el string a numeros para
-																					// multiplicar
+						int numero = Character.getNumericValue(linea.charAt(i)); // convierto el string a numeros para multiplicar
+																					
 						sumatoria = numero * sumatoria;
 					}
 				}
