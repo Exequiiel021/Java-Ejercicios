@@ -33,7 +33,7 @@ public class ejercicio2 {
 			// Leemos linea a linea el fichero
 			while (s.hasNextLine()) {
 				String linea = s.nextLine(); // Guardamos la linea en un String
-				System.out.println(linea); // Imprimimos la linea cuyo texto original es 123
+				System.out.println(linea); // Imprimimos la linea cuyo texto original es "123"
 
 				if (letra.equalsIgnoreCase("S")) {
 					for (int i = 0; i < linea.length(); i++) {
