@@ -44,8 +44,8 @@ public class ejercicio3 {
 		        }
 		    }
 		    // Guardar el resultado en otro archivo
-		    File outputFile = new File("C:\\Users\\Exequ\\OneDrive\\Documentos//salida.txt");
-		    try (PrintWriter writer = new PrintWriter(new FileOutputStream(outputFile))) {
+		    File salida = new File("C:\\Users\\Exequ\\OneDrive\\Documentos//salida.txt");
+		    try (PrintWriter writer = new PrintWriter(new FileOutputStream(salida))) {
 		        writer.print(guardar.toString()); // Guardar el archivo
 		    } catch (IOException ex) {
 		        System.out.println("Mensaje: " + ex.getMessage());
