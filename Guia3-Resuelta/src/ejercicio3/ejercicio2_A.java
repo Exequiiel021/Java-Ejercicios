@@ -36,7 +36,7 @@ public class ejercicio2_A {
 
 		for (int i = 0; i < fraseCharArray.length; i++) {
 			if (fraseCharArray[i] == 32) { // codigo ascii del espacio en blanco
-				fraseCharArray[i] = 'a';
+				fraseCharArray[i] = 32+1;
 			} else {
 				fraseCharArray[i] += desplazamiento;
 			}
@@ -44,7 +44,7 @@ public class ejercicio2_A {
 
 		for (int i = 0; i < fraseCharArray2.length; i++) {
 			if (fraseCharArray2[i] == 32) { // codigo ascii del espacio en blanco
-				fraseCharArray2[i] = 'b';
+				fraseCharArray2[i] = 32+2;
 			} else {
 				fraseCharArray2[i] += desplazamiento2;
 			}
